@@ -32,21 +32,6 @@
 			</includes>
 			<fileMode>0644</fileMode>
 		</dependencySet>
-
-		<dependencySet>
-			<useTransitiveDependencies>false</useTransitiveDependencies>
-			<unpack>true</unpack>
-			<unpackOptions>
-				<excludes>
-					<exclude>META-INF/**</exclude>
-				</excludes>
-			</unpackOptions>
-			<includes>
-				<include>${modules.common.groupid}:mindot-viewer</include>
-			</includes>
-			<fileMode>0644</fileMode>
-		</dependencySet>
-
 	</dependencySets>
 
 	<fileSets>
@@ -76,7 +61,10 @@
                         <directory>target/dependency/generic-compiler-executor-${modules.common.version}</directory>
                         <outputDirectory />
                 </fileSet>
-
+                <fileSet>
+                        <directory>target/dependency/mindot-viewer-${modules.common.version}</directory>
+                        <outputDirectory />
+                </fileSet>
 	</fileSets>
 
 	<files>

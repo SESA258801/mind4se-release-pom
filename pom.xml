@@ -108,7 +108,8 @@
 			<groupId>${modules.common.groupid}</groupId>
 			<artifactId>mindot-viewer</artifactId>
 			<version>${modules.common.version}</version>
-			<type>jar</type>
+                        <classifier>bin</classifier>
+			<type>zip</type>
 		</dependency>
 
 		<dependency>
