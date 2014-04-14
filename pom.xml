@@ -42,6 +42,8 @@
 		<module>garbage-composite-annotation</module>
 		<module>mindoc</module>
 		<module>mind-cpp</module>
+		<module>generic-compiler-extension</module>
+                <module>generic-compiler-executor</module>
 	</modules>
 
 	<dependencies>
@@ -147,6 +149,20 @@
 			<type>zip</type>
 		</dependency>
 
+                <dependency>
+                        <groupId>${modules.common.groupid}</groupId>
+                        <artifactId>generic-compiler-executor</artifactId>
+                        <version>${modules.common.version}</version>
+                        <classifier>bin</classifier>
+                        <type>zip</type>
+                </dependency>
+
+                <dependency>
+                        <groupId>${modules.common.groupid}</groupId>
+                        <artifactId>generic-compiler-extension</artifactId>
+                        <version>${modules.common.version}</version>
+                        <type>jar</type>
+                </dependency>
 	</dependencies>
 
 	<build>
