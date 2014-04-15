@@ -25,7 +25,6 @@
 				<include>${modules.common.groupid}:adl-backend-static</include>
 				<include>${modules.common.groupid}:ext-parser</include>
 				<include>${modules.common.groupid}:global-extensions</include>
-				<include>${modules.common.groupid}:dumpdot-annotation</include>
 				<include>${modules.common.groupid}:iar-extension</include>
 				<include>${modules.common.groupid}:garbage-composite-annotation</include>
 				<include>${modules.common.groupid}:generic-compiler-extension</include>
@@ -70,6 +69,11 @@
                         <directory>target/dependency/dependency-tools-${modules.common.version}</directory>
                         <outputDirectory />
                 </fileSet>
+                <fileSet>
+                        <directory>target/dependency/dumpdot-annotation-${modules.common.version}</directory>
+                        <outputDirectory />
+                </fileSet>
+
 
 	</fileSets>
 
