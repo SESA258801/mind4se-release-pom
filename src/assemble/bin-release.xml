@@ -29,6 +29,7 @@
 				<include>${modules.common.groupid}:iar-extension</include>
 				<include>${modules.common.groupid}:garbage-composite-annotation</include>
 				<include>${modules.common.groupid}:generic-compiler-extension</include>
+                                <include>${modules.common.groupid}:dependency-tools</include>
 			</includes>
 			<fileMode>0644</fileMode>
 		</dependencySet>
@@ -65,6 +66,11 @@
                         <directory>target/dependency/mindot-viewer-${modules.common.version}</directory>
                         <outputDirectory />
                 </fileSet>
+                <fileSet>
+                        <directory>target/dependency/dependency-tools-${modules.common.version}</directory>
+                        <outputDirectory />
+                </fileSet>
+
 	</fileSets>
 
 	<files>
