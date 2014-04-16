@@ -38,7 +38,6 @@
 			<directory>src/assemble/resources/examples</directory>
 			<filtered>false</filtered>
 			<outputDirectory>examples</outputDirectory>
-			<fileMode>0644</fileMode>
 		</fileSet>
 		<fileSet>
 			<directory>target/dependency/mindc-${modules.common.version}</directory>
