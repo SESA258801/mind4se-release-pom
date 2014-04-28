@@ -154,6 +154,14 @@
 
 		<dependency>
 			<groupId>${modules.common.groupid}</groupId>
+			<artifactId>mindc-optimizations</artifactId>
+			<version>${modules.common.version}</version>
+			<classifier>bin</classifier>
+			<type>zip</type>
+		</dependency>
+
+		<dependency>
+			<groupId>${modules.common.groupid}</groupId>
 			<artifactId>generic-compiler-executor</artifactId>
 			<version>${modules.common.version}</version>
 			<classifier>bin</classifier>

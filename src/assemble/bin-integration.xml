@@ -15,10 +15,6 @@
 			<useTransitiveDependencies>false</useTransitiveDependencies>
 			<outputDirectory>ext</outputDirectory>
 			<includes>
-				<include>${modules.common.groupid}:adl-frontend-static</include>
-				<include>${modules.common.groupid}:single-interface-plugin</include>
-				<include>${modules.common.groupid}:cpl-preproc-static</include>
-				<include>${modules.common.groupid}:adl-backend-static</include>
 				<include>${modules.common.groupid}:ext-parser</include>
 				<include>${modules.common.groupid}:global-extensions</include>
 				<include>${modules.common.groupid}:iar-extension</include>
@@ -68,6 +64,10 @@
 		</fileSet>
 		<fileSet>
 			<directory>target/dependency/dumpdot-annotation-${modules.common.version}</directory>
+			<outputDirectory />
+		</fileSet>
+		<fileSet>
+			<directory>target/dependency/mindc-optimizations-${modules.common.version}</directory>
 			<outputDirectory />
 		</fileSet>
 	</fileSets>
