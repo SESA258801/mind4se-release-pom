@@ -43,8 +43,8 @@
 		<module>mindoc</module>
 		<module>mind-cpp</module>
 		<module>generic-compiler-extension</module>
-                <module>generic-compiler-executor</module>
-                <module>dependency-tools</module>
+		<module>generic-compiler-executor</module>
+		<module>dependency-tools</module>
 	</modules>
 
 	<dependencies>
@@ -102,7 +102,7 @@
 			<groupId>${modules.common.groupid}</groupId>
 			<artifactId>dumpdot-annotation</artifactId>
 			<version>${modules.common.version}</version>
-                        <classifier>bin</classifier>
+			<classifier>bin</classifier>
 			<type>zip</type>
 		</dependency>
 
@@ -110,7 +110,7 @@
 			<groupId>${modules.common.groupid}</groupId>
 			<artifactId>mindot-viewer</artifactId>
 			<version>${modules.common.version}</version>
-                        <classifier>bin</classifier>
+			<classifier>bin</classifier>
 			<type>zip</type>
 		</dependency>
 
@@ -152,28 +152,36 @@
 			<type>zip</type>
 		</dependency>
 
-                <dependency>
-                        <groupId>${modules.common.groupid}</groupId>
-                        <artifactId>generic-compiler-executor</artifactId>
-                        <version>${modules.common.version}</version>
-                        <classifier>bin</classifier>
-                        <type>zip</type>
-                </dependency>
+		<dependency>
+			<groupId>${modules.common.groupid}</groupId>
+			<artifactId>mindc-optimizations</artifactId>
+			<version>${modules.common.version}</version>
+			<classifier>bin</classifier>
+			<type>zip</type>
+		</dependency>
 
-                <dependency>
-                        <groupId>${modules.common.groupid}</groupId>
-                        <artifactId>dependency-tools</artifactId>
-                        <version>${modules.common.version}</version>
-                        <classifier>bin</classifier>
-                        <type>zip</type>
-                </dependency>
+		<dependency>
+			<groupId>${modules.common.groupid}</groupId>
+			<artifactId>generic-compiler-executor</artifactId>
+			<version>${modules.common.version}</version>
+			<classifier>bin</classifier>
+			<type>zip</type>
+		</dependency>
 
-                <dependency>
-                        <groupId>${modules.common.groupid}</groupId>
-                        <artifactId>generic-compiler-extension</artifactId>
-                        <version>${modules.common.version}</version>
-                        <type>jar</type>
-                </dependency>
+		<dependency>
+			<groupId>${modules.common.groupid}</groupId>
+			<artifactId>dependency-tools</artifactId>
+			<version>${modules.common.version}</version>
+			<classifier>bin</classifier>
+			<type>zip</type>
+		</dependency>
+
+		<dependency>
+			<groupId>${modules.common.groupid}</groupId>
+			<artifactId>generic-compiler-extension</artifactId>
+			<version>${modules.common.version}</version>
+			<type>jar</type>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -222,18 +230,16 @@
 
 					<!-- Generates directory assembly for integration test -->
 					<execution>
-						<id>bin-dir</id>
+						<id>bin-integration</id>
 						<phase>pre-integration-test</phase>
 						<goals>
-							<goal>directory-single</goal>
+							<goal>single</goal>
 						</goals>
 						<configuration>
 							<descriptors>
-								<descriptor>src/assemble/bin-release.xml</descriptor>
+								<descriptor>src/assemble/bin-integration.xml</descriptor>
 							</descriptors>
-							<outputDirectory>
-                                ${project.build.directory}
-							</outputDirectory>
+							<appendAssemblyId>false</appendAssemblyId>
 						</configuration>
 					</execution>
 				</executions>
@@ -246,11 +252,10 @@
 				<configuration>
 					<executable>make</executable>
 					<workingDirectory>
-                        ${project.build.directory}/${project.build.finalName}-bin/${project.build.finalName}/examples
+                        ${project.build.directory}/${project.build.finalName}/${project.build.finalName}/examples
 					</workingDirectory>
 					<arguments>
 						<argument>MIND_ROOT=../..</argument>
-						<!--argument>MINDOC_ROOT=../../</argument-->
 						<argument>REPORT_ROOT=target/linklint-report</argument>
 						<argument>clean</argument>
 						<argument>all</argument>
