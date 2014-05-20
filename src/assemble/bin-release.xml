@@ -25,27 +25,12 @@
 				<include>${modules.common.groupid}:adl-backend-static</include>
 				<include>${modules.common.groupid}:ext-parser</include>
 				<include>${modules.common.groupid}:global-extensions</include>
-				<include>${modules.common.groupid}:dumpdot-annotation</include>
 				<include>${modules.common.groupid}:iar-extension</include>
 				<include>${modules.common.groupid}:garbage-composite-annotation</include>
+				<include>${modules.common.groupid}:generic-compiler-extension</include>
 			</includes>
 			<fileMode>0644</fileMode>
 		</dependencySet>
-
-		<dependencySet>
-			<useTransitiveDependencies>false</useTransitiveDependencies>
-			<unpack>true</unpack>
-			<unpackOptions>
-				<excludes>
-					<exclude>META-INF/**</exclude>
-				</excludes>
-			</unpackOptions>
-			<includes>
-				<include>${modules.common.groupid}:mindot-viewer</include>
-			</includes>
-			<fileMode>0644</fileMode>
-		</dependencySet>
-
 	</dependencySets>
 
 	<fileSets>
@@ -70,6 +55,24 @@
 			<directory>target/dependency/mindcpp-${modules.cpp.version}</directory>
 			<outputDirectory />
 		</fileSet>
+                <fileSet>
+                        <directory>target/dependency/generic-compiler-executor-${modules.common.version}</directory>
+                        <outputDirectory />
+                </fileSet>
+                <fileSet>
+                        <directory>target/dependency/mindot-viewer-${modules.common.version}</directory>
+                        <outputDirectory />
+                </fileSet>
+                <fileSet>
+                        <directory>target/dependency/dependency-tools-${modules.common.version}</directory>
+                        <outputDirectory />
+                </fileSet>
+                <fileSet>
+                        <directory>target/dependency/dumpdot-annotation-${modules.common.version}</directory>
+                        <outputDirectory />
+                </fileSet>
+
+
 	</fileSets>
 
 	<files>
