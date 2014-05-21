@@ -58,34 +58,6 @@
 
 		<dependency>
 			<groupId>${modules.common.groupid}</groupId>
-			<artifactId>adl-frontend-static</artifactId>
-			<version>${modules.common.version}</version>
-			<type>jar</type>
-		</dependency>
-
-		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
-			<artifactId>single-interface-plugin</artifactId>
-			<version>${modules.common.version}</version>
-			<type>jar</type>
-		</dependency>
-
-		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
-			<artifactId>cpl-preproc-static</artifactId>
-			<version>${modules.common.version}</version>
-			<type>jar</type>
-		</dependency>
-
-		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
-			<artifactId>adl-backend-static</artifactId>
-			<version>${modules.common.version}</version>
-			<type>jar</type>
-		</dependency>
-
-		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
 			<artifactId>ext-parser</artifactId>
 			<version>${modules.common.version}</version>
 			<type>jar</type>
