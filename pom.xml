@@ -227,7 +227,7 @@
                         ${project.build.directory}/${project.build.finalName}/${project.build.finalName}/examples
 					</workingDirectory>
 					<arguments>
-						<argument>MIND_ROOT=../..</argument>
+						<argument>MIND_ROOT=${project.build.directory}/${project.build.finalName}/${project.build.finalName}</argument>
 						<argument>REPORT_ROOT=target/linklint-report</argument>
 						<argument>clean</argument>
 						<argument>all</argument>
