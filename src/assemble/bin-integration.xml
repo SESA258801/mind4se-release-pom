@@ -70,9 +70,10 @@
 			<directory>target/dependency/mindc-optimizations-${modules.common.version}</directory>
 			<outputDirectory />
 		</fileSet>
-		       <directory>target/dependency/examples-${modules.cpp.version}</directory>
-                       <outputDirectory />
-               </fileSet>
+		<fileSet>
+			<directory>target/dependency/examples-${modules.cpp.version}</directory>
+                	<outputDirectory />
+		</fileSet>
 	</fileSets>
 
 	<files>
