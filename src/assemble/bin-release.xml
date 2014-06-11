@@ -6,6 +6,7 @@
 	<id>bin</id>
 
 	<formats>
+		<format>bin</format>
 		<format>zip</format>
 		<format>tar.gz</format>
 		<format>tar.bz2</format>
@@ -37,7 +38,7 @@
 			<directory>target/dependency/mindc-${modules.common.version}</directory>
 			<outputDirectory />
 			<excludes>
-				<exclude>examples/Makefile</exclude>
+				<exclude>examples/**</exclude>
 			</excludes>
 		</fileSet>
 		<fileSet>
@@ -71,6 +72,10 @@
 		<fileSet>
 			<directory>target/dependency/mindc-optimizations-${modules.common.version}</directory>
 			<outputDirectory />
+		</fileSet>
+		<fileSet>
+			<directory>target/dependency/examples-${modules.cpp.version}</directory>
+                	<outputDirectory />
 		</fileSet>
 	</fileSets>
 
