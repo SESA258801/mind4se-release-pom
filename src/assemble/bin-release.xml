@@ -30,11 +30,6 @@
 
 	<fileSets>
 		<fileSet>
-			<directory>src/assemble/resources/examples</directory>
-			<filtered>false</filtered>
-			<outputDirectory>examples</outputDirectory>
-		</fileSet>
-		<fileSet>
 			<directory>target/dependency/mindc-${modules.common.version}</directory>
 			<outputDirectory />
 			<excludes>
@@ -74,8 +69,8 @@
 			<outputDirectory />
 		</fileSet>
 		<fileSet>
-			<directory>target/dependency/examples-${modules.cpp.version}</directory>
-                	<outputDirectory />
+			<directory>target/dependency/examples-${modules.common.version}</directory>
+			<outputDirectory />
 		</fileSet>
 	</fileSets>
 

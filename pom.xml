@@ -157,12 +157,12 @@
 		</dependency>
 		
 		<dependency>
-                       <groupId>${modules.common.groupid}</groupId>
-                       <artifactId>examples</artifactId>
-                       <version>${modules.cpp.version}</version>
-                       <classifier>bin</classifier>
-                       <type>zip</type>
-               </dependency>
+			<groupId>${modules.common.groupid}</groupId>
+			<artifactId>examples</artifactId>
+			<version>${modules.common.version}</version>
+			<classifier>bin</classifier>
+			<type>zip</type>
+		</dependency>
 
 	</dependencies>
 
@@ -239,7 +239,7 @@
 					<arguments>
 						<argument>MIND_ROOT=${project.build.directory}/${project.build.finalName}/${project.build.finalName}</argument>
 						<argument>REPORT_ROOT=target/linklint-report</argument>
-						<argument>clean</argument>
+						<argument>clean_all</argument>
 						<argument>all</argument>
 					</arguments>
 				</configuration>
