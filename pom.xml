@@ -239,7 +239,7 @@
 					<arguments>
 						<argument>MIND_ROOT=${project.build.directory}/${project.build.finalName}/${project.build.finalName}</argument>
 						<argument>REPORT_ROOT=target/linklint-report</argument>
-						<argument>clean_all</argument>
+						<argument>clean</argument>
 						<argument>all</argument>
 					</arguments>
 				</configuration>
