@@ -72,6 +72,10 @@
 			<directory>target/dependency/examples-${modules.common.version}</directory>
 			<outputDirectory />
 		</fileSet>
+		<fileSet>
+			<directory>target/dependency/mind-visual-diff-${module.diff.version}</directory>
+			<outputDirectory />
+		</fileSet>
 	</fileSets>
 
 	<files>
