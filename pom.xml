@@ -24,6 +24,7 @@
 		<modules.common.groupid>org.ow2.mind</modules.common.groupid>
 		<modules.common.version>2.1-SNAPSHOT</modules.common.version>
 		<modules.cpp.version>0.1.1-SNAPSHOT</modules.cpp.version>
+		<module.diff.version>0.1.0-SNAPSHOT</module.diff.version>
 
 		<maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
 		<release.buildNumber>${maven.build.timestamp}</release.buildNumber>
@@ -46,6 +47,7 @@
 		<module>generic-compiler-executor</module>
 		<module>dependency-tools</module>
 		<module>examples</module>
+		<module>mind-visual-diff</module>
 	</modules>
 
 	<dependencies>
@@ -160,6 +162,14 @@
 			<groupId>${modules.common.groupid}</groupId>
 			<artifactId>examples</artifactId>
 			<version>${modules.common.version}</version>
+			<classifier>bin</classifier>
+			<type>zip</type>
+		</dependency>
+		
+		<dependency>
+			<groupId>${modules.common.groupid}</groupId>
+			<artifactId>mind-visual-diff</artifactId>
+			<version>${module.diff.version}</version>
 			<classifier>bin</classifier>
 			<type>zip</type>
 		</dependency>
