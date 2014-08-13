@@ -241,25 +241,43 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>1.2.1</version>
-				<configuration>
-					<executable>make</executable>
-					<workingDirectory>
-                        ${project.build.directory}/${project.build.finalName}/${project.build.finalName}/examples
-					</workingDirectory>
-					<arguments>
-						<argument>MIND_ROOT=${project.build.directory}/${project.build.finalName}/${project.build.finalName}</argument>
-						<argument>REPORT_ROOT=target/linklint-report</argument>
-						<argument>clean</argument>
-						<argument>all</argument>
-					</arguments>
-				</configuration>
+
 				<executions>
 					<execution>
 						<id>test-makefile-assembly</id>
+						<phase>integration-test</phase>
+						<configuration>
+							<executable>make</executable>
+							<workingDirectory>
+								${project.build.directory}/${project.build.finalName}/${project.build.finalName}/examples
+							</workingDirectory>
+							<arguments>
+								<argument>MIND_ROOT=${project.build.directory}/${project.build.finalName}/${project.build.finalName}</argument>
+								<argument>clean</argument>
+								<argument>all</argument>
+							</arguments>
+						</configuration>
 						<goals>
 							<goal>exec</goal>
 						</goals>
+					</execution>
+					
+					<execution>
+						<id>test-makefile-assembly-doc</id>
 						<phase>integration-test</phase>
+						<configuration>
+							<executable>make</executable>
+							<workingDirectory>
+								${project.build.directory}/${project.build.finalName}/${project.build.finalName}/examples/doc
+							</workingDirectory>
+							<arguments>
+								<argument>MIND_ROOT=${project.build.directory}/${project.build.finalName}/${project.build.finalName}</argument>
+								<argument>check_doc</argument>
+							</arguments>
+						</configuration>
+						<goals>
+							<goal>exec</goal>
+						</goals>
 					</execution>
 				</executions>
 			</plugin>
