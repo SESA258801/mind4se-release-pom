@@ -49,6 +49,7 @@
 		<module>dependency-tools</module>
 		<module>examples</module>
 		<module>mind-visual-diff</module>
+		<module>simple-c-macro-generator</module>
 	</modules>
 
 	<dependencies>
@@ -182,6 +183,15 @@
 			<classifier>bin</classifier>
 			<type>zip</type>
 		</dependency>
+
+                <dependency>
+                        <groupId>${modules.common.groupid}</groupId>
+                        <artifactId>simple-c-macro-generator</artifactId>
+                        <version>${module.common.version}</version>
+                        <classifier>bin</classifier>
+                        <type>zip</type>
+                </dependency>
+
 
 	</dependencies>
 
