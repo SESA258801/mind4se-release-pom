@@ -187,7 +187,7 @@
                 <dependency>
                         <groupId>${modules.common.groupid}</groupId>
                         <artifactId>simple-c-macro-generator</artifactId>
-                        <version>${module.common.version}</version>
+                        <version>${modules.common.version}</version>
                         <classifier>bin</classifier>
                         <type>zip</type>
                 </dependency>
