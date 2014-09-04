@@ -198,8 +198,7 @@
                         <groupId>${modules.common.groupid}</groupId>
                         <artifactId>json-dump</artifactId>
                         <version>${module.json.version}</version>
-                        <classifier>bin</classifier>
-                        <type>zip</type>
+                        <type>jar</type>
                 </dependency>
 
 
