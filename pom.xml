@@ -25,6 +25,7 @@
 		<modules.common.version>2.1-SNAPSHOT</modules.common.version>
 		<modules.cpp.version>0.1.1-SNAPSHOT</modules.cpp.version>
 		<module.diff.version>0.1.0-SNAPSHOT</module.diff.version>
+		<module.json.version>0.1.0-SNAPSHOT</module.json.version>
 
 		<maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
 		<release.buildNumber>${maven.build.timestamp}</release.buildNumber>
@@ -50,6 +51,7 @@
 		<module>examples</module>
 		<module>mind-visual-diff</module>
 		<module>simple-c-macro-generator</module>
+		<module>json-dump</module>
 	</modules>
 
 	<dependencies>
@@ -188,6 +190,14 @@
                         <groupId>${modules.common.groupid}</groupId>
                         <artifactId>simple-c-macro-generator</artifactId>
                         <version>${modules.common.version}</version>
+                        <classifier>bin</classifier>
+                        <type>zip</type>
+                </dependency>
+                
+                <dependency>
+                        <groupId>${modules.common.groupid}</groupId>
+                        <artifactId>json-dump</artifactId>
+                        <version>${modules.json.version}</version>
                         <classifier>bin</classifier>
                         <type>zip</type>
                 </dependency>
