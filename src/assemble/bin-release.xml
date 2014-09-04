@@ -24,6 +24,7 @@
 				<include>${modules.common.groupid}:diab-extension</include>
 				<include>${modules.common.groupid}:garbage-composite-annotation</include>
 				<include>${modules.common.groupid}:generic-compiler-extension</include>
+				<include>${modules.common.groupid}:json-dump</include>
 			</includes>
 			<fileMode>0644</fileMode>
 		</dependencySet>
