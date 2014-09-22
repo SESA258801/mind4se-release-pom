@@ -79,7 +79,7 @@
 			<outputDirectory />
 		</fileSet>
                 <fileSet>
-                        <directory>target/dependency/simple-c-macro-generator${module.common.version}</directory>
+                        <directory>target/dependency/simple-c-macro-generator-${modules.common.version}</directory>
                         <outputDirectory />
                 </fileSet>
 
