@@ -108,13 +108,12 @@
 			<type>jar</type>
 		</dependency>
 
-                <dependency>
-                        <groupId>${modules.common.groupid}</groupId>
-                        <artifactId>diab-extension</artifactId>
-                        <version>${modules.common.version}</version>
-                        <type>jar</type>
-                </dependency>
-
+		<dependency>
+			<groupId>${modules.common.groupid}</groupId>
+			<artifactId>diab-extension</artifactId>
+			<version>${modules.common.version}</version>
+			<type>jar</type>
+		</dependency>
 
 		<dependency>
 			<groupId>${modules.common.groupid}</groupId>
@@ -186,22 +185,20 @@
 			<type>zip</type>
 		</dependency>
 
-                <dependency>
-                        <groupId>${modules.common.groupid}</groupId>
-                        <artifactId>simple-c-macro-generator</artifactId>
-                        <version>${modules.common.version}</version>
-                        <classifier>bin</classifier>
-                        <type>zip</type>
-                </dependency>
-                
-                <dependency>
-                        <groupId>${modules.common.groupid}</groupId>
-                        <artifactId>json-dump</artifactId>
-                        <version>${module.json.version}</version>
-                        <type>jar</type>
-                </dependency>
+		<dependency>
+			<groupId>${modules.common.groupid}</groupId>
+			<artifactId>simple-c-macro-generator</artifactId>
+			<version>${modules.common.version}</version>
+			<classifier>bin</classifier>
+			<type>zip</type>
+		</dependency>
 
-
+		<dependency>
+			<groupId>${modules.common.groupid}</groupId>
+			<artifactId>json-dump</artifactId>
+			<version>${module.json.version}</version>
+			<type>jar</type>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -309,6 +306,7 @@
 					</execution>
 				</executions>
 			</plugin>
+
 			<!-- User documentation generation -->
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -377,72 +375,80 @@
 						</goals>
 						<inherited>false</inherited>
 						<configuration>
-						<includes>Mind-and-plugins-User-guide.xml</includes>
-						<targetDirectory>${project.build.directory}/site</targetDirectory>
-						<htmlCustomization>${basedir}/src/docbkx/xsl/minddoc-html.xsl</htmlCustomization>
-						<htmlStylesheet>css/docbook.css</htmlStylesheet>
-						<customizationParameters>
-							<parameter>
-								<name>root.path</name>
-								<value>.</value>
-							</parameter>
-							<parameter>
-							<name>pdf.link</name>
-                                    <value>Mind-and-plugins-User-guide.pdf</value>
-                                </parameter>
-                                <parameter>
-                                    <name>chunked.link</name>
-                                    <value>userGuide/Mind-and-plugins-User-guide.html</value>
-                                </parameter>
-                                <parameter>
-                                    <name>printable.link</name>
-                                    <value>printable/Mind-and-plugins-User-guide.html</value>
-                                </parameter>
-                            </customizationParameters>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>userguide-html-chunked</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>generate-html</goal>
-                        </goals>
-                        <inherited>false</inherited>
-                        <configuration>
-                            <includes>Mind-and-plugins-User-guide.xml</includes>
-                            <chunkedOutput>true</chunkedOutput>
-                            <targetDirectory>${project.build.directory}/site/userGuide</targetDirectory>
-                            <imgSrcPath>../</imgSrcPath>
-                            <htmlCustomization>${basedir}/src/docbkx/xsl/minddoc-chunk.xsl</htmlCustomization>
-                            <htmlStylesheet>../css/docbook-chunk.css</htmlStylesheet>
-                            <customizationParameters>
-                                <parameter>
-                                    <name>root.path</name>
-                                    <value>..</value>
-                                </parameter>
-                                <parameter>
-                                    <name>pdf.link</name>
-                                    <value>../Mind-and-plugins-User-guide.pdf</value>
-                                </parameter>
-                                <parameter>
-                                    <name>single.link</name>
-                                    <value>../Mind-and-plugins-User-guide.html</value>
-                                </parameter>
-                                <parameter>
-                                    <name>printable.link</name>
-                                    <value>../printable/Mind-and-plugins-User-guide.html</value>
-                                </parameter>
-                            </customizationParameters>
-                        </configuration>
-                    </execution>
-                </executions>
-                <configuration>
-                    <targetDirectory>${project.build.directory}/site</targetDirectory>
-                    <xslthlConfig>${basedir}/src/docbkx/xsl/xslthl-config.xml</xslthlConfig>
-                    <highlightSource>1</highlightSource>
-                    <xincludeSupported>true</xincludeSupported>
-                </configuration>
-            </plugin>
+							<includes>Mindc-and-plugins-User-guide.xml</includes>
+							<targetDirectory>${project.build.directory}/site</targetDirectory>
+							<htmlCustomization>${basedir}/src/docbkx/xsl/minddoc-html.xsl</htmlCustomization>
+							<htmlStylesheet>css/docbook.css</htmlStylesheet>
+							<customizationParameters>
+								<parameter>
+									<name>root.path</name>
+									<value>.</value>
+								</parameter>
+								<parameter>
+									<name>pdf.link</name>
+									<value>Mindc-and-plugins-User-guide.pdf</value>
+								</parameter>
+								<parameter>
+									<name>chunked.link</name>
+									<value>userGuide/Mindc-and-plugins-User-guide.html</value>
+								</parameter>
+								<parameter>
+									<name>printable.link</name>
+									<value>printable/Mindc-and-plugins-User-guide.html</value>
+								</parameter>
+							</customizationParameters>
+						</configuration>
+					</execution>
+					<execution>
+						<id>userguide-html-chunked</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>generate-html</goal>
+						</goals>
+						<inherited>false</inherited>
+						<configuration>
+							<includes>Mindc-and-plugins-User-guide.xml</includes>
+							<chunkedOutput>true</chunkedOutput>
+							<targetDirectory>${project.build.directory}/site/userGuide</targetDirectory>
+							<imgSrcPath>../</imgSrcPath>
+							<htmlCustomization>${basedir}/src/docbkx/xsl/minddoc-chunk.xsl</htmlCustomization>
+							<htmlStylesheet>../css/docbook-chunk.css</htmlStylesheet>
+							<customizationParameters>
+								<parameter>
+									<name>root.path</name>
+									<value>..</value>
+								</parameter>
+								<parameter>
+									<name>pdf.link</name>
+									<value>../Mindc-and-plugins-User-guide.pdf</value>
+								</parameter>
+								<parameter>
+									<name>single.link</name>
+									<value>../Mindc-and-plugins-User-guide.html</value>
+								</parameter>
+								<parameter>
+									<name>printable.link</name>
+									<value>../printable/Mindc-and-plugins-User-guide.html</value>
+								</parameter>
+							</customizationParameters>
+						</configuration>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>net.sf.xslthl</groupId>
+						<artifactId>xslthl</artifactId>
+						<version>2.0.1</version>
+						<scope>runtime</scope>
+					</dependency>
+				</dependencies>
+				<configuration>
+					<targetDirectory>${project.build.directory}/site</targetDirectory>
+					<highlightXslthlConfig>${basedir}/src/docbkx/xsl/xslthl-config.xml</highlightXslthlConfig>
+					<highlightSource>1</highlightSource>
+					<xincludeSupported>true</xincludeSupported>
+				</configuration>
+			</plugin>
 
 		</plugins>
 
