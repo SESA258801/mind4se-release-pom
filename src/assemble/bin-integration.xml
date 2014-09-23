@@ -76,12 +76,17 @@
 			<outputDirectory />
 		</fileSet>
 		<fileSet>
-                        <directory>target/dependency/simple-c-macro-generator-${modules.common.version}</directory>
-                        <outputDirectory />
-                </fileSet>
+			<directory>target/dependency/simple-c-macro-generator-${modules.common.version}</directory>
+			<outputDirectory />
+		</fileSet>
 	</fileSets>
 
 	<files>
+		<file>
+			<source>target/site/Mindc-and-plugins-User-guide.pdf</source>
+			<fileMode>0644</fileMode>
+			<outputDirectory>doc</outputDirectory>
+		</file>
 		<file>
 			<source>src/assemble/resources/Factory.adl</source>
 			<outputDirectory>runtime</outputDirectory>
