@@ -60,7 +60,7 @@
                 <title>C macro generator plugin</title>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                     href="../../simple-c-macro-generator/src/docbkx/sections/c-macro-generator_aim.xml"/>
-            xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                     href="../../simple-c-macro-generator/src/docbkx/sections/c-macro-generator_usage.xml"/>
             </section>
         </section>
