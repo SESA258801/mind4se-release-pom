@@ -4,6 +4,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.se.mind</groupId>
+
+	<parent>
+		<groupId>org.ow2.mind</groupId>
+		<artifactId>mind-parent</artifactId>
+		<version>7-SNAPSHOT</version>
+		<relativePath>maven/mind-parent</relativePath>
+	</parent>
 	<artifactId>mind4se-compiler</artifactId>
 	<version>0.1-SNAPSHOT</version>
 	<name>MIND4SE compiler</name>
