@@ -65,6 +65,18 @@
             </section>
         </section>
     </chapter>
+    <chapter>
+        <title>MIND tools</title>
+        <section>
+            <title>Dependency tools</title>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                href="../../dependency-tools/src/docbkx/sections/dependency-tools_aim.xml"/>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                href="../../dependency-tools/src/docbkx/sections/object-dependencies_cmd.xml"/>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                href="../../dependency-tools/src/docbkx/sections/mind-violation_cmd.xml"/>
+        </section>
+    </chapter>
     <appendix>
         <title>Annex</title>
         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../mind-compiler/src/docbkx/userGuide/advanced.xml" />
