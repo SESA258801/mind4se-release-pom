@@ -29,6 +29,17 @@
                 </author>
                 <revremark>Added documentation about C macro generator plugin</revremark>
             </revision>
+            <revision>
+                <revnumber>0.3</revnumber>
+                <date>2014-10-16</date>
+                <author>
+                    <personname>
+                        <firstname>François</firstname>
+                        <surname>DELOYE</surname>
+                    </personname>
+                </author>
+                <revremark>Added documentation about Optimization Back-end</revremark>
+            </revision>
         </revhistory>
     
         <title>
