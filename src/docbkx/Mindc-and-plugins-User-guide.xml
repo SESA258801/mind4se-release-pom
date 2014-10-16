@@ -57,10 +57,23 @@
             <para>The purpose of the plugins available and the way they are invoked is documented
                 hereafter.</para>
             <section>
+                <title>Optimization Back-end</title>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" 
+                    href="../../Optimization-Backend/src/docbkx/sections/Optimization-backend_aim.xml"/>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                    href="../../Optimization-Backend/src/docbkx/sections/Optimization-backend_usage.xml"/>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                    href="../../Optimization-Backend/src/docbkx/sections/Optimization-backend_annotations.xml"/>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                    href="../../Optimization-Backend/src/docbkx/sections/Optimization-backend_DSS.xml"/>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                    href="../../Optimization-Backend/src/docbkx/sections/Optimization-backend_gains.xml"/>
+            </section>
+            <section>
                 <title>C macro generator plugin</title>
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                     href="../../simple-c-macro-generator/src/docbkx/sections/c-macro-generator_aim.xml"/>
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                     href="../../simple-c-macro-generator/src/docbkx/sections/c-macro-generator_usage.xml"/>
             </section>
         </section>
