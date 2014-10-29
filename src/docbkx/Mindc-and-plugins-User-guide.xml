@@ -48,12 +48,14 @@
         <subtitle>version <?eval ${project.version}?></subtitle>
     </info>
     
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../mind-compiler/src/docbkx/userGuide/intro-chapter.xml" />
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+        href="../../mind-compiler/src/docbkx/userGuide/intro-chapter.xml" />
     <chapter>
         <title>MIND language</title>
         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
             href="../../mind-compiler/src/docbkx/userGuide/adl.xml"/>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../mind-compiler/src/docbkx/userGuide/idl.xml" />
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+            href="../../mind-compiler/src/docbkx/userGuide/idl.xml" />
         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
             href="../../mind-compiler/src/docbkx/userGuide/c.xml"/>
     </chapter>
@@ -103,10 +105,12 @@
     </chapter>
     <appendix>
         <title>Annex</title>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../mind-compiler/src/docbkx/userGuide/advanced.xml" />
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+            href="../../mind-compiler/src/docbkx/userGuide/advanced.xml" />
         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
             href="../../mind-compiler/src/docbkx/userGuide/api.xml"/>
     </appendix>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../mind-compiler/src/docbkx/userGuide/glossary.xml" />
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+        href="../../mind-compiler/src/docbkx/userGuide/glossary.xml" />
   
 </book>
