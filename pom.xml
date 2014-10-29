@@ -41,8 +41,7 @@
 	<modules>
 		<module>mind-compiler</module>
 		<module>Optimization-Backend</module>
-		<module>global-extensions/ext-parser</module>
-		<module>global-extensions/global-extensions</module>
+		<module>global-extensions</module>
 		<module>dumpdot-annotation</module>
 		<module>mindot-viewer</module>
 		<module>mindunit/mindunit-runtime</module>
