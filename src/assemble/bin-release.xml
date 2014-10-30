@@ -19,7 +19,7 @@
 			<outputDirectory>ext</outputDirectory>
 			<includes>
 				<include>${modules.common.groupid}:ext-parser</include>
-				<include>${modules.common.groupid}:global-extensions</include>
+				<include>${modules.common.groupid}:ext-loader</include>
 				<include>${modules.common.groupid}:iar-extension</include>
 				<include>${modules.common.groupid}:diab-extension</include>
 				<include>${modules.common.groupid}:garbage-composite-annotation</include>
