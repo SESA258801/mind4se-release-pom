@@ -78,7 +78,7 @@
 
 		<dependency>
 			<groupId>${modules.common.groupid}</groupId>
-			<artifactId>global-extensions</artifactId>
+			<artifactId>ext-loader</artifactId>
 			<version>${modules.common.version}</version>
 			<type>jar</type>
 		</dependency>
