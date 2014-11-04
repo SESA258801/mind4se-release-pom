@@ -71,16 +71,10 @@
 
 		<dependency>
 			<groupId>${modules.common.groupid}</groupId>
-			<artifactId>ext-parser</artifactId>
+			<artifactId>global-extensions</artifactId>
 			<version>${modules.common.version}</version>
-			<type>jar</type>
-		</dependency>
-
-		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
-			<artifactId>ext-loader</artifactId>
-			<version>${modules.common.version}</version>
-			<type>jar</type>
+			<classifier>bin</classifier>
+			<type>zip</type>
 		</dependency>
 
 		<dependency>

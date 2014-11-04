@@ -18,8 +18,6 @@
 			<useTransitiveDependencies>false</useTransitiveDependencies>
 			<outputDirectory>ext</outputDirectory>
 			<includes>
-				<include>${modules.common.groupid}:ext-parser</include>
-				<include>${modules.common.groupid}:ext-loader</include>
 				<include>${modules.common.groupid}:iar-extension</include>
 				<include>${modules.common.groupid}:diab-extension</include>
 				<include>${modules.common.groupid}:garbage-composite-annotation</include>
@@ -48,6 +46,10 @@
 		</fileSet>
 		<fileSet>
 			<directory>target/dependency/mindcpp-${modules.cpp.version}</directory>
+			<outputDirectory />
+		</fileSet>
+		<fileSet>
+			<directory>target/dependency/global-extensions-${modules.common.version}</directory>
 			<outputDirectory />
 		</fileSet>
 		<fileSet>
