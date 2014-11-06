@@ -7,16 +7,26 @@
     <info>
         <revhistory>
             <revision>
-                <revnumber>0.1</revnumber>
-                <date>2014-08-22</date>
+                <revnumber>0.4</revnumber>
+                <date>2014-11-06</date>
                 <author>
                     <personname>
                         <firstname>François</firstname>
                         <surname>DELOYE</surname>
                     </personname>
                 </author>
-                <revremark>First revision of <emphasis>&productName;</emphasis> User
-                    Guide as a modular document</revremark>
+                <revremark>Added documentation about Deployment style sheet</revremark>
+            </revision>
+            <revision>
+                <revnumber>0.3</revnumber>
+                <date>2014-10-16</date>
+                <author>
+                    <personname>
+                        <firstname>François</firstname>
+                        <surname>DELOYE</surname>
+                    </personname>
+                </author>
+                <revremark>Added documentation about Optimization Back-end</revremark>
             </revision>
             <revision>
                 <revnumber>0.2</revnumber>
@@ -30,15 +40,16 @@
                 <revremark>Added documentation about C macro generator plugin</revremark>
             </revision>
             <revision>
-                <revnumber>0.3</revnumber>
-                <date>2014-10-16</date>
+                <revnumber>0.1</revnumber>
+                <date>2014-08-22</date>
                 <author>
                     <personname>
                         <firstname>François</firstname>
                         <surname>DELOYE</surname>
                     </personname>
                 </author>
-                <revremark>Added documentation about Optimization Back-end</revremark>
+                <revremark>First revision of <emphasis>&productName;</emphasis> User
+                    Guide as a modular document</revremark>
             </revision>
         </revhistory>
     
@@ -69,6 +80,15 @@
                 capabilities.</para>
             <para>The purpose of the plugins available and the way they are invoked is documented
                 hereafter.</para>
+            <section>
+                <title>Deployment style sheet</title>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" 
+                    href="../../global-extensions/src/docbkx/sections/Deployment-Style-Sheet_aim.xml"/>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                    href="../../global-extensions/src/docbkx/sections/Deployment-Style-Sheet_usage.xml"/>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                    href="../../global-extensions/src/docbkx/sections/Deployment-Style-Sheet_syntax.xml"/>
+            </section>
             <section>
                 <title>Optimization Back-end</title>
                 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" 
