@@ -28,8 +28,8 @@
 	</ciManagement>
 
 	<properties>
-		<modules.common.groupid>org.ow2.mind</modules.common.groupid>
-		<modules.common.version>2.1-SNAPSHOT</modules.common.version>
+		<modules.common.groupId>org.ow2.mind</modules.common.groupId>
+		<modules.common.version>2.2-SNAPSHOT</modules.common.version>
 		<modules.cpp.version>0.1.1-SNAPSHOT</modules.cpp.version>
 		<module.diff.version>0.1.1-SNAPSHOT</module.diff.version>
 		<module.json.version>0.1.0-SNAPSHOT</module.json.version>
@@ -62,7 +62,7 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>mindc</artifactId>
 			<version>${modules.common.version}</version>
 			<classifier>bin</classifier>
@@ -70,7 +70,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>global-extensions</artifactId>
 			<version>${modules.common.version}</version>
 			<classifier>bin</classifier>
@@ -78,7 +78,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>dumpdot-annotation</artifactId>
 			<version>${modules.common.version}</version>
 			<classifier>bin</classifier>
@@ -86,7 +86,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>mindot-viewer</artifactId>
 			<version>${modules.common.version}</version>
 			<classifier>bin</classifier>
@@ -94,7 +94,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>mindunit</artifactId>
 			<version>${modules.common.version}</version>
 			<classifier>bin</classifier>
@@ -102,28 +102,28 @@
 		</dependency>
 
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>iar-extension</artifactId>
 			<version>${modules.common.version}</version>
 			<type>jar</type>
 		</dependency>
 
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>diab-extension</artifactId>
 			<version>${modules.common.version}</version>
 			<type>jar</type>
 		</dependency>
 
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>garbage-composite-annotation</artifactId>
 			<version>${modules.common.version}</version>
 			<type>jar</type>
 		</dependency>
 
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>mindoc</artifactId>
 			<version>${modules.common.version}</version>
 			<classifier>bin</classifier>
@@ -131,7 +131,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>mindcpp</artifactId>
 			<version>${modules.cpp.version}</version>
 			<classifier>bin</classifier>
@@ -139,7 +139,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>mindc-optimizations</artifactId>
 			<version>${modules.common.version}</version>
 			<classifier>bin</classifier>
@@ -147,7 +147,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>generic-compiler-executor</artifactId>
 			<version>${modules.common.version}</version>
 			<classifier>bin</classifier>
@@ -155,7 +155,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>dependency-tools</artifactId>
 			<version>${modules.common.version}</version>
 			<classifier>bin</classifier>
@@ -163,14 +163,14 @@
 		</dependency>
 
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>generic-compiler-extension</artifactId>
 			<version>${modules.common.version}</version>
 			<type>jar</type>
 		</dependency>
 		
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>examples</artifactId>
 			<version>${modules.common.version}</version>
 			<classifier>bin</classifier>
@@ -178,7 +178,7 @@
 		</dependency>
 		
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>mind-visual-diff</artifactId>
 			<version>${module.diff.version}</version>
 			<classifier>bin</classifier>
@@ -186,7 +186,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>simple-c-macro-generator</artifactId>
 			<version>${modules.common.version}</version>
 			<classifier>bin</classifier>
@@ -194,7 +194,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>${modules.common.groupid}</groupId>
+			<groupId>${modules.common.groupId}</groupId>
 			<artifactId>json-dump</artifactId>
 			<version>${module.json.version}</version>
 			<type>jar</type>
@@ -443,6 +443,7 @@
 					</dependency>
 				</dependencies>
 				<configuration>
+					<sourceDirectory>${basedir}/src/docbkx</sourceDirectory>
 					<targetDirectory>${project.build.directory}/site</targetDirectory>
 					<highlightXslthlConfig>${basedir}/src/docbkx/xsl/xslthl-config.xml</highlightXslthlConfig>
 					<highlightSource>1</highlightSource>
