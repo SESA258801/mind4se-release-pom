@@ -18,11 +18,11 @@
 			<useTransitiveDependencies>false</useTransitiveDependencies>
 			<outputDirectory>ext</outputDirectory>
 			<includes>
-				<include>${modules.common.groupid}:iar-extension</include>
-				<include>${modules.common.groupid}:diab-extension</include>
-				<include>${modules.common.groupid}:garbage-composite-annotation</include>
-				<include>${modules.common.groupid}:generic-compiler-extension</include>
-				<include>${modules.common.groupid}:json-dump</include>
+				<include>${modules.common.groupId}:iar-extension</include>
+				<include>${modules.common.groupId}:diab-extension</include>
+				<include>${modules.common.groupId}:garbage-composite-annotation</include>
+				<include>${modules.common.groupId}:generic-compiler-extension</include>
+				<include>${modules.common.groupId}:json-dump</include>
 			</includes>
 			<fileMode>0644</fileMode>
 		</dependencySet>
