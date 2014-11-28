@@ -7,8 +7,19 @@
     <info>
         <revhistory>
             <revision>
+                <revnumber>0.5</revnumber>
+                <date>2014-11-28</date>
+                <author>
+                    <personname>
+                        <firstname>François</firstname>
+                        <surname>DELOYE</surname>
+                    </personname>
+                </author>
+                <revremark>Added documentation about mind-diff</revremark>
+            </revision>
+            <revision>
                 <revnumber>0.4</revnumber>
-                <date>2014-11-06</date>
+                <date>2014-11-05</date>
                 <author>
                     <personname>
                         <firstname>François</firstname>
@@ -113,6 +124,13 @@
     </chapter>
     <chapter>
         <title>MIND tools</title>
+        <section>
+            <title>Mind Visual Diff tool</title>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                href="../../mind-visual-diff/src/docbkx/sections/mind-diff_aim.xml"/>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                href="../../mind-visual-diff/src/docbkx/sections/mind-diff_cmd.xml"/>
+        </section>
         <section>
             <title>Dependency tools</title>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
