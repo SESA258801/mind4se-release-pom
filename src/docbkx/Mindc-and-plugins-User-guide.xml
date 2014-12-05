@@ -125,6 +125,13 @@
     <chapter>
         <title>MIND tools</title>
         <section>
+            <title>Mindoc tool</title>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                href="../../mindoc/src/docbkx/sections/mindoc_aim.xml"/>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                href="../../mindoc/src/docbkx/sections/mindoc_cmd.xml"/>
+        </section>
+        <section>
             <title>Mind Visual Diff tool</title>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                 href="../../mind-visual-diff/src/docbkx/sections/mind-diff_aim.xml"/>
