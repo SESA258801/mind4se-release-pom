@@ -7,6 +7,17 @@
     <info>
         <revhistory>
             <revision>
+                <revnumber>0.6</revnumber>
+                <date>2014-12-08</date>
+                <author>
+                    <personname>
+                        <firstname>François</firstname>
+                        <surname>DELOYE</surname>
+                    </personname>
+                </author>
+                <revremark>Added documentation about mindoc</revremark>
+            </revision>
+            <revision>
                 <revnumber>0.5</revnumber>
                 <date>2014-11-28</date>
                 <author>
